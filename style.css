@@ -4,7 +4,6 @@ body {
     padding: 40px 15px;
     font-family: 'Poppins', sans-serif;
     background-color: #f7fafc;
-    /* Padrão sutil elegante imitando azulejo português/italiano */
     background-image: url('https://www.transparenttextures.com/patterns/az-subtle.png');
     color: #0f4c81;
     display: flex;
@@ -24,12 +23,10 @@ body {
     text-align: center;
     box-sizing: border-box;
     position: relative;
-    /* Borda sofisticada azul cobalto idêntica ao convite */
     border: 3px solid #0f4c81;
     outline: 12px solid #ffffff;
 }
 
-/* Detalhe decorativo de limão no topo */
 .invite-container::before {
     content: "🍋";
     position: absolute;
@@ -61,7 +58,7 @@ body {
 }
 
 .separator {
-    color: #eab308; /* Tom de amarelo limão elegante */
+    color: #eab308;
     font-size: 18px;
     margin: 10px 0;
 }
@@ -90,7 +87,7 @@ body {
     padding: 0 20px;
 }
 
-/* CONTADOR REGRESSIVO COM DEGRADÊ SUAVE */
+/* CONTADOR REGRESSIVO */
 .countdown-container {
     background: #f0f7ff;
     border: 2px solid #0f4c81;
@@ -124,7 +121,7 @@ body {
     color: #6b7280;
 }
 
-/* DATA, HORA E MAPA */
+/* DATA, HORA E BOTOES */
 .event-details {
     display: flex;
     justify-content: center;
@@ -136,15 +133,8 @@ body {
     border-radius: 15px;
     border: 1px dashed #eab308;
 }
-.detail-item p {
-    margin: 4px 0;
-    font-size: 14px;
-}
-.detail-divider {
-    width: 1px;
-    height: 45px;
-    background-color: #eab308;
-}
+.detail-item p { margin: 4px 0; font-size: 14px; }
+.detail-divider { width: 1px; height: 45px; background-color: #eab308; }
 .icon { font-size: 22px; }
 
 .btn-maps, .btn-whatsapp {
@@ -215,7 +205,7 @@ h3 {
     display: block;
 }
 
-/* FORMULÁRIO DE CONFIRMAÇÃO */
+/* FORMULÁRIO RSVP */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -232,7 +222,6 @@ h3 {
     font-size: 14px;
     outline: none;
 }
-#rsvp-name:focus { border-color: #0f4c81; }
 
 /* LISTA DE PRESENTES SCROLLAVEL */
 .gift-list {
@@ -266,10 +255,7 @@ h3 {
     font-size: 14px;
     color: #334155;
 }
-.gift-item:hover {
-    background-color: #f0f7ff;
-    color: #0f4c81;
-}
+.gift-item:hover { background-color: #f0f7ff; color: #0f4c81; }
 .status.available {
     color: #16a34a;
     background: #f0fdf4;
