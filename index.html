@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Cozinha - Giovanna & João</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="invite-container">
+        
+        <p class="subtitle">VOCÊ É NOSSO CONVIDADO PARA O</p>
+        <h1 class="main-title">CHÁ DE COZINHA</h1>
+        <p class="separator">✦ DE ✦</p>
+        <h2 class="couple-names">Giovanna & João</h2>
+
+        <div class="heart-line">♥️</div>
+
+        <p class="tagline">Um novo lar se prepara com amor, e nada melhor do que celebrar esse momento com você!</p>
+
+        <div class="countdown-container">
+            <h3>Contagem Regressiva</h3>
+            <div id="countdown">
+                <div class="time-block"><span id="days">00</span><p>Dias</p></div>
+                <div class="time-block"><span id="hours">00</span><p>Horas</p></div>
+                <div class="time-block"><span id="minutes">00</span><p>Min</p></div>
+                <div class="time-block"><span id="seconds">00</span><p>Seg</p></div>
+            </div>
+        </div>
+
+        <section class="event-details">
+            <div class="detail-item">
+                <span class="icon">📅</span>
+                <p><strong>13 DE SETEMBRO</strong></p>
+                <p>Domingo</p>
+            </div>
+            <div class="detail-divider"></div>
+            <div class="detail-item">
+                <span class="icon">🕒</span>
+                <p><strong>ÀS 14H00</strong></p>
+            </div>
+        </section>
+
+        <section class="location">
+            <h3>LOCALIZAÇÃO</h3>
+            <p>Rua Horácio Manoel Vieira, 443</p>
+            <p>Jd Paulista - Guarulhos - SP</p>
+            <a href="https://maps.google.com/?q=Rua+Horácio+Manoel+Vieira,+443+Jardim+Paulista+Guarulhos" target="_blank" class="btn-maps">Ver no Google Maps</a>
+        </section>
+
+        <hr class="section-divider">
+        <section class="story">
+            <h3>Nossa História</h3>
+            <p class="story-text">
+                Dizem que o futuro pertence a Deus, mas Ele gosta de escrever as mais belas histórias através dos encontros mais simples. A nossa começou na faculdade. O que parecia ser apenas mais uma amizade se transformou no início da maior aventura de nossas vidas.
+            </p>
+            <p class="story-text">
+                Nosso primeiro encontro oficial foi no McDonald's. Entre conversas, risadas e batatas fritas, o coração do João já tinha tomado uma decisão definitiva: ele queria viver uma história ao lado da Giovanna. No início, ela resistiu um pouco... Nenhum dos dois procurava algo sério naquele momento. Mas quando Deus tem planos para duas pessoas, o amor encontra seu caminho.
+            </p>
+            <p class="story-text">
+                Pouco a pouco, as conversas se tornaram indispensáveis, os abraços mais demorados e os dias melhores quando estávamos compartilhados. O que começou na faculdade se tornou um amor maduro, real e abençoado. Hoje, temos a certeza de que encontramos o nosso porto seguro um no outro. E é por isso que, no dia 13/09, daremos um passo fundamental rumo ao altar com o nosso Chá de Cozinha. Queremos, acima de tudo, que esta nova fase seja abençoada por Deus e compartilhada com as pessoas que mais amamos!
+            </p>
+        </section>
+
+        <hr class="section-divider">
+        <section class="gallery">
+            <h3>Galeria do Casal</h3>
+            <div class="photo-grid">
+                <div class="photo-card"><img src="441a9c15-fa1a-44bd-b72c-d39f12943702.jpg" alt="Foto Casal 1"></div>
+                <div class="photo-card"><img src="694646d2-c66b-4614-8ae5-50569448bc6c.jpg" alt="Foto Casal 2"></div>
+                <div class="photo-card"><img src="052c9916-cbc6-4214-b8af-bbd5bb9326e1.jpg" alt="Foto Casal 3"></div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        <section class="rsvp">
+            <h3>Confirmação de Presença</h3>
+            <p>Por favor, confirme sua presença até o dia 01/09/2026 para que possamos organizar tudo com muito carinho.</p>
+            <div class="form-group">
+                <input type="text" id="rsvp-name" placeholder="Digite seu nome completo">
+                <button onclick="sendRSVP()" class="btn-whatsapp">Confirmar via WhatsApp</button>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+        <section class="gifts">
+            <h3>Lista de Presentes</h3>
+            <p>Escolha um item da lista abaixo para nos presentear. Ao clicar, você abrirá o WhatsApp para nos avisar e reservar o item!</p>
+            
+            <div class="gift-list">
+                <div class="gift-category-title">PREPARAÇÃO E UTENSÍLIOS</div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Colheres de Silicone')">🍳 Jogo de Colheres de Silicone <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Conjunto de Assadeiras de Alumínio')">🍳 Conjunto de Assadeiras de Alumínio <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Tábua de Corte de Bambu Grande')">🍳 Tábua de Corte de Bambu Grande <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Facas de Cozinha')">🍳 Jogo de Facas de Cozinha <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Bowls de Vidro (Conjunto)')">🍳 Bowls de Vidro (Conjunto) <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Bowls de Inox para Mistura')">🍳 Bowls de Inox para Mistura <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Batedor de Claras (Fouet) e Pinça')">🍳 Batedor de Claras (Fouet) e Pinça <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Medidores Culinários (Copos e Colheres)')">🍳 Medidores Culinários <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Escorredor de Macarrão de Inox')">🍳 Escorredor de Macarrão de Inox <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Escorredor de Arroz')">🍳 Escorredor de Arroz <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Forma de Bolo com Furo no Meio')">🍳 Forma de Bolo com Furo <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Forma de Pudim de Silicone')">🍳 Forma de Pudim de Silicone <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Forma para Pizza')">🍳 Forma para Pizza <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Forma para Cupcakes/Muffins')">🍳 Forma para Cupcakes <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Ralo Inox Multifuncional')">🍳 Ralo Inox Multifuncional <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Peneiras de Inox (Jogo com 3)')">🍳 Peneiras de Inox (Jogo com 3) <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Rolo de Massa de Madeira')">🍳 Rolo de Massa de Madeira <span class="status available">Disponível</span></div>
+
+                <div class="gift-category-title">LOUÇAS E SERVIR</div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Jantar Clássico (6 Pessoas)')">🍽️ Jogo de Jantar (6 Pessoas) <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Pratos Rasos (6 Unidades)')">🍽️ Jogo de Pratos Rasos <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Pratos Fundos (6 Unidades)')">🍽️ Jogo de Pratos Fundos <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Pratos de Sobremesa (6 Unidades)')">🍽️ Jogo de Pratos de Sobremesa <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Copos para Água (6 Unidades)')">🍽️ Jogo de Copos para Água <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Copos Altos de Suco/Refresco')">🍽️ Jogo de Copos Altos <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Taças de Vinho de Cristal (Jogo com 6)')">🍽️ Taças de Vinho (Jogo com 6) <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Taças de Espumante (Jogo com 6)')">🍽️ Taças de Espumante <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Xícaras de Café com Pires')">🍽️ Jogo de Xícaras de Café <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Xícaras de Chá com Pires')">🍽️ Jogo de Xícaras de Chá <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Saladeira de Vidro Grande')">🍽️ Saladeira de Vidro Grande <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Petisqueira de Cerâmica com Divisórias')">🍽️ Petisqueira com Divisórias <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Manteigueira de Porcelana')">🍽️ Manteigueira de Porcelana <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Açucareiro e Meleira de Vidro')">🍽️ Açucareiro e Meleira <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Galheteiro para Azeite e Vinagre')">🍽️ Galheteiro Azeite/Vinagre <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Travessa Refratária de Vidro Retangular')">🍽️ Travessa Refratária Vidro <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Talheres de Inox (24 Peças)')">🍽️ Jogo de Talheres (24 Peças) <span class="status available">Disponível</span></div>
+
+                <div class="gift-category-title">ORGANIZAÇÃO E ARMAZENAMENTO</div>
+                <div class="gift-item" onclick="chooseGift('Jogo de Potes Herméticos de Vidro')">🥫 Jogo de Potes Herméticos <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Porta Mantimentos Acrílico (Conjunto)')">🥫 Porta Mantimentos Acrílico <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Organizador de Temperos Giratório')">🥫 Organizador de Temperos <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Porta Guardanapos e Porta Papel Toalha')">🥫 Porta Guardanapos e Papel <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Organizador de Talheres para Gaveta')">🥫 Organizador de Talheres <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Suporte para Xícaras de Armário')">🥫 Suporte para Xícaras <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Escorredor de Louças Moderno')">🥫 Escorredor de Louças <span class="status available">Disponível</span></div>
+
+                <div class="gift-category-title">BAR, CAFÉ E CHÁ</div>
+                <div class="gift-item" onclick="chooseGift('Garrafa Térmica Moderna para Café')">☕ Garrafa Térmica Café <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Suporte de Filtro de Café em Cerâmica')">☕ Suporte Filtro Cerâmica <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Prensa Francesa')">☕ Prensa Francesa <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Chaleira com Apito de Inox')">☕ Chaleira com Apito Inox <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Abridor de Vinho Elétrico')">🍷 Abridor de Vinho Elétrico <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Coqueteleira de Inox com Dosador')">🍷 Coqueteleira de Inox <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Balde de Gelo em Inox com Pegador')">🍷 Balde de Gelo Inox <span class="status available">Disponível</span></div>
+
+                <div class="gift-category-title">ELETROS E UTILIDADES</div>
+                <div class="gift-item" onclick="chooseGift('Liquidificador Potente')">⚡ Liquidificador Potente <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Batedeira Prática')">⚡ Batedeira Prática <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Sanduicheira e Grill')">⚡ Sanduicheira e Grill <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Mixer de Mão 3 em 1')">⚡ Mixer de Mão 3 em 1 <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Torradeira Elétrica')">⚡ Torradeira Elétrica <span class="status available">Disponível</span></div>
+                <div class="gift-item" onclick="chooseGift('Balança Digital de Cozinha')">⚡ Balança Digital Cozinha <span class="status available">Disponível</span></div>
+            </div>
+        </section>
+
+        <p class="footer-note">CONTAMOS COM A SUA PRESENÇA! ♥️</p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
