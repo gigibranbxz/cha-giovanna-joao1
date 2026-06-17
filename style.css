@@ -1,0 +1,301 @@
+/* CONFIGURAÇÕES GERAIS - ESTILO AMALFI */
+body {
+    margin: 0;
+    padding: 40px 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fafc;
+    /* Padrão sutil elegante imitando azulejo português/italiano */
+    background-image: url('https://www.transparenttextures.com/patterns/az-subtle.png');
+    color: #0f4c81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* MOLDURA DO CONVITE */
+.invite-container {
+    max-width: 650px;
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(15, 76, 129, 0.15);
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    /* Borda sofisticada azul cobalto idêntica ao convite */
+    border: 3px solid #0f4c81;
+    outline: 12px solid #ffffff;
+}
+
+/* Detalhe decorativo de limão no topo */
+.invite-container::before {
+    content: "🍋";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    background: white;
+    padding: 0 15px;
+}
+
+/* TIPOGRAFIA */
+.subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #0f4c81;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #0f4c81;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.separator {
+    color: #eab308; /* Tom de amarelo limão elegante */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.couple-names {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 56px;
+    color: #1e40af;
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.heart-line {
+    color: #0f4c81;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+    padding: 0 20px;
+}
+
+/* CONTADOR REGRESSIVO COM DEGRADÊ SUAVE */
+.countdown-container {
+    background: #f0f7ff;
+    border: 2px solid #0f4c81;
+    padding: 20px 15px;
+    border-radius: 20px;
+    margin: 35px 0;
+    background-image: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+}
+.countdown-container h3 {
+    margin-top: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #0f4c81;
+}
+#countdown {
+    display: flex;
+    justify-content: space-around;
+}
+.time-block span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e40af;
+    font-family: 'Playfair Display', serif;
+}
+.time-block p {
+    margin: 2px 0 0 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6b7280;
+}
+
+/* DATA, HORA E MAPA */
+.event-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 35px 0;
+    background: #fffbeb;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px dashed #eab308;
+}
+.detail-item p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+.detail-divider {
+    width: 1px;
+    height: 45px;
+    background-color: #eab308;
+}
+.icon { font-size: 22px; }
+
+.btn-maps, .btn-whatsapp {
+    display: inline-block;
+    background-color: #0f4c81;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(15, 76, 129, 0.2);
+}
+.btn-maps:hover, .btn-whatsapp:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+.section-divider {
+    border: 0;
+    height: 12px;
+    background-image: url('https://www.transparenttextures.com/patterns/binding-dark.png');
+    background-color: #0f4c81;
+    opacity: 0.15;
+    margin: 45px 0;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    color: #0f4c81;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.story-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4b5563;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* GALERIA DE FOTOS */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.photo-card {
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #0f4c81;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+.photo-card:hover { transform: scale(1.04); }
+.photo-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+/* FORMULÁRIO DE CONFIRMAÇÃO */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+}
+#rsvp-name {
+    width: 85%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+}
+#rsvp-name:focus { border-color: #0f4c81; }
+
+/* LISTA DE PRESENTES SCROLLAVEL */
+.gift-list {
+    max-height: 350px;
+    overflow-y: auto;
+    border: 2px solid #f1f5f9;
+    border-radius: 20px;
+    padding: 10px;
+    background: #ffffff;
+    text-align: left;
+}
+.gift-category-title {
+    background: #f0f7ff;
+    color: #0f4c81;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.gift-category-title:first-child { margin-top: 0; }
+.gift-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 14px;
+    color: #334155;
+}
+.gift-item:hover {
+    background-color: #f0f7ff;
+    color: #0f4c81;
+}
+.status.available {
+    color: #16a34a;
+    background: #f0fdf4;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.footer-note {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #0f4c81;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE CELULAR */
+@media (max-width: 540px) {
+    .invite-container { padding: 35px 20px; outline: 6px solid #ffffff; }
+    .couple-names { font-size: 42px; }
+    .main-title { font-size: 28px; }
+    .photo-grid { grid-template-columns: 1fr; gap: 20px; }
+    .photo-card img { height: 220px; }
+    .event-details { flex-direction: column; gap: 15px; }
+    .detail-divider { width: 60%; height: 1px; }
+    #rsvp-name { width: 100%; }
+}
